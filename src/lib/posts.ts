@@ -21,6 +21,8 @@ function parse(filename: string): Post {
     date: data.date,
     featured: Boolean(data.featured),
     readingTime: readingTime(content).text,
+    image: data.image ?? undefined,
+    imageAlt: data.imageAlt ?? data.title ?? "",
     content,
   };
 }
@@ -29,13 +31,17 @@ export function getAllPosts(): Post[] {
   if (!fs.existsSync(POSTS_DIR)) return [];
   return fs
     .readdirSync(POSTS_DIR)
-    .filter((f) => f.endsWith(".md"))
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_"))
     .map(parse)
     .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 }
 
 export function getAllMeta(): PostMeta[] {
-  return getAllPosts().map(({ content: _c, ...m }) => m);
+  return getAllPosts().map((p) => {
+    const { content, ...meta } = p;
+    void content;
+    return meta;
+  });
 }
 
 export function getPost(slug: string): Post | undefined {
