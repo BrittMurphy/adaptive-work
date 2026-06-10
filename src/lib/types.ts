@@ -8,6 +8,8 @@ export type Post = {
   date: string;
   featured: boolean;
   readingTime: string;
+  image?: string;
+  imageAlt?: string;
   content: string;
 };
 
