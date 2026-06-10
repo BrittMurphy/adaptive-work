@@ -6,9 +6,9 @@ export const site = {
   tagline: "Making sense of how work, leadership, and organizations are changing.",
   description:
     "Perspectives on leadership, organizational change, AI, and the future of work from Brittney Murphy — two decades helping organizations navigate transformation.",
-  email: "hello@adaptivework.co",
+  email: "britt@eh1.me",
   social: {
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/brittneythomas",
   },
 };
 
