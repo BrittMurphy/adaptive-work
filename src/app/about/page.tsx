@@ -21,7 +21,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={80} as="h1">
               <span style={{ fontSize: "var(--text-4xl)", display: "block", marginTop: "1.25rem" }}>
-                I&apos;m Brittney Murphy. I help organizations change in ways that actually hold.
+                I&apos;m Brittney Murphy. I help organizations change in ways that actually stick.
               </span>
             </Reveal>
           </div>
