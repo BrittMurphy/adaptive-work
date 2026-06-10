@@ -6,7 +6,7 @@ export function CategoryPill({ category, href }: { category: string; href?: stri
   const content = (
     <span
       className="eyebrow"
-      style={{ fontFamily: "var(--font-sans)", color: "var(--accent)" }}
+      style={{ fontFamily: "var(--font-sans)", color: "var(--sage-deep)" }}
     >
       {category}
     </span>
@@ -18,6 +18,16 @@ export function CategoryPill({ category, href }: { category: string; href?: stri
 export function FeaturedCard({ post }: { post: PostMeta }) {
   return (
     <article className="group flex h-full flex-col" style={{ paddingTop: "1.5rem", borderTop: "2px solid var(--fg)" }}>
+      {post.image && (
+        <Link href={`/insights/${post.slug}`} className="mb-5 block">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={post.image}
+            alt={post.imageAlt || post.title}
+            style={{ width: "100%", height: 220, objectFit: "cover", borderRadius: 4, border: "1px solid var(--rule)" }}
+          />
+        </Link>
+      )}
       <div className="flex items-center gap-3">
         <CategoryPill category={post.category} href={`/insights?category=${encodeURIComponent(post.category)}`} />
       </div>
