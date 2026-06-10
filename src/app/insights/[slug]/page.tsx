@@ -77,6 +77,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </div>
           </header>
 
+          {post.image && (
+            <figure style={{ marginTop: "2.5rem" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={post.image}
+                alt={post.imageAlt || post.title}
+                style={{ width: "100%", height: "auto", borderRadius: 4, border: "1px solid var(--rule)" }}
+              />
+            </figure>
+          )}
+
           <hr className="rule" style={{ marginBlock: "2.5rem" }} />
 
           <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
