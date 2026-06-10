@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/ui";
 import { ContactCTA } from "@/components/ContactCTA";
+import { Headshot } from "@/components/Headshot";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -26,9 +27,9 @@ export default function AboutPage() {
             </Reveal>
           </div>
           <Reveal delay={140}>
-            <figure className="hidden md:flex items-center justify-center mt-2" style={{ width: 180, height: 220, border: "1px solid var(--rule)", background: "var(--bg-2)" }}>
-              <span style={{ fontFamily: "var(--font-display)", fontSize: "4.5rem", color: "var(--accent)" }}>BM</span>
-            </figure>
+            <div className="hidden md:block mt-2">
+              <Headshot size={200} />
+            </div>
           </Reveal>
         </div>
       </section>
