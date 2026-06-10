@@ -3,6 +3,7 @@ import { getAllMeta, getFeatured } from "@/lib/posts";
 import { Button, Reveal } from "@/components/ui";
 import { FeaturedCard, ArticleCard, ArticleRow } from "@/components/Article";
 import { ContactCTA } from "@/components/ContactCTA";
+import { Headshot } from "@/components/Headshot";
 import { site } from "@/lib/site";
 
 export default function Home() {
@@ -93,8 +94,8 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <figure className="hidden md:flex items-center justify-center" style={{ width: 200, height: 240, border: "1px solid var(--rule)", background: "var(--bg)" }}>
-              <span style={{ fontFamily: "var(--font-display)", fontSize: "5rem", color: "var(--accent)", lineHeight: 1 }}>BM</span>
+            <figure className="hidden md:block">
+              <Headshot size={200} />
             </figure>
           </Reveal>
         </div>
