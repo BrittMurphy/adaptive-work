@@ -112,6 +112,3 @@ The ability to adapt and effectively lead when the technology inevitably changes
 
 - [What Is a Chief AI Officer?](https://www.ibm.com/think/topics/chief-ai-officer) (IBM), on the scope and responsibilities of the emerging CAIO role
 - [IBM Study: CEOs Are Reshaping C-suite Roles for the AI Era](https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era) (IBM Institute for Business Value), on how AI is reshaping leadership structures
-<!-- Swap the two plain-text references below for your preferred source URLs if you have specific pages in mind -->
-- Boston University, on the distinction between AI fluency and AI tool proficiency
-- Workday, on building an AI-fluent culture
