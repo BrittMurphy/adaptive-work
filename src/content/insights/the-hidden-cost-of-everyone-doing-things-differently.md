@@ -1,4 +1,3 @@
-
 ---
 title: "The Hidden Cost of Everyone Doing Things Differently"
 excerpt: "What if the bigger risk isn't everyone working differently, but getting everyone to do the same thing without knowing whether it's the right thing? A different perspective on consistency, transformation, and making the right things repeatable."
